@@ -20,6 +20,8 @@ window.addEventListener('load', function(){
    
    boton.addEventListener('click', function(){
       cambiarColor();
+      console.log(this);
+      this.style.border = "5px solid black";
    });
    
    //Evento Focus
