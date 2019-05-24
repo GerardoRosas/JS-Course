@@ -2,7 +2,7 @@
 
 
 function holaMundo(texto){
-    var hola_mundo = "Textio dentrio de funcion";
+    var hola_mundo = "Textio dentro de funcion";
     console.log(texto);
     console.log(numero);
     
