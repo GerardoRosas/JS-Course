@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Aprendiendo jQuery</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href = "jQuery/jquery-ui-1.12.1/jquery-ui.css"/>
+        <link rel="stylesheet" href = "jQuery/jquery-ui-1.12.1/jquery-ui.structure.css"/>
+        <link rel="stylesheet" href = "jQuery/jquery-ui-1.12.1/jquery-ui.theme.css"/>
+        <script src="jQuery/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+        <script type="text/javascript" src = "jQuery/06-interface.js"></script>
+             
+    </head>
+    <style>
+            .elemento{
+                width: 300px;
+                height: 200px;
+                border: 4px solid black;
+                background: lightblue;
+                margin: 20px;
+                float: left;
+            }
+
+            .lista-seleccionable li{
+                width: 80%;
+                padding: 20px;
+                border: 1px solid #ccc;
+                list-style: none;
+                cursor: pointer;
+            }
+            
+            ul .ui-selecting {background: blueviolet}
+            ul .ui-selected {background: chartreuse}
+
+            #area{
+                width: 300px;
+                height: 300px;
+                border: 4px solid greenyellow;
+            }
+            
+            #elemento-movido{
+                width: 100px;
+                height: 100px;
+                border: 4px solid red;
+            }
+
+            
+        </style>
+    <body>
+        <h1>jQuery UI</h1>    
+        <div id="area" class="elemento"></div>
+        <div id="elemento-movido" class="elemento"></div>
+
+        <ul class="lista-seleccionable">
+            <li>GTA 6</li>
+            <li>Rainbow Six Siege</li>
+            <li>Spiderman</li>
+            <li>Fifa 19</li>
+        </ul>
+
+        <div class="elemento">
+            Hola, soy un elemento de la web
+        </div>
+        <div class="elemento">
+            Hola, soy un elemento de la web2
+        </div>
+        <div class="elemento">
+            Hola, soy un elemento de la web3
+        </div>
+
+    </body>
+
+</html>
