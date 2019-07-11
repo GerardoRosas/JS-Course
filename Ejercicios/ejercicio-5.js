@@ -5,7 +5,7 @@ Muestre todos los numeros divisiro de un numero introducido
 */
 
 var numero = parseInt(prompt("Introduce un numero"));
-//Lops numeros divisibles puede ser entre el mismo y por uno (primos)
+//Los numeros divisibles pueden ser entre el mismo y por uno (primos)
 //numeros pares 
 
 for(var i = 1; i<=numero; i++){
