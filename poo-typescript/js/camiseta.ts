@@ -4,8 +4,17 @@ interface CamisteBase{
     getColor();
 }
 
+//Decorador
+function estampar(logo: String){
+    return function(target: Function){
+        target.prototype.estampacion = function(): void{
+            console.log("Camiseta estampad con el logo de "+logo);
+        }
+    }
+}
 
 //Clases molde donde podemos crear infiniad de objetos
+@estampar('Gucci Gang') //Se agrega el decorador a la clase Camiseta
 class Camiseta implements CamisteBase{
     //Propiedaes
     private color: string;
@@ -47,13 +56,12 @@ class Sudadera extends Camiseta{
 }
 
 var sudadera_nike = new Sudadera("rojo", "manga larga", "adidas", "XX", 600);
+sudadera_nike.setCapucha(true);
+sudadera_nike.setColor("Verde");
 console.log(sudadera_nike);
+console.log(sudadera_nike.getCapucha());
 
 var camiseta = new Camiseta("ff", "dd", "dds", "dddd", 40);
-console.log(camiseta)
+console.log(camiseta);
 
-
-
-
-
-
+camiseta.estampacion();
