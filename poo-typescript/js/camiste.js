@@ -1,15 +1,21 @@
+"use strict";
+exports.__esModule = true;
 //Clases molde donde podemos crear infiniad de objetos
 var Camiseta = /** @class */ (function () {
-    function Camiseta() {
+    //Metodos (funciones o acciones que hará el objeto)
+    function Camiseta(color, modelo, marca, talla, precio) {
+        this.color = color;
+        this.modelo = modelo;
+        this.marca = marca;
+        this.talla = talla;
+        this.precio = precio;
     }
+    Camiseta.prototype.setColor = function (color) {
+        this.color = color;
+    };
+    Camiseta.prototype.getColor = function () {
+        return this.color;
+    };
     return Camiseta;
 }());
-var camiseta = new Camiseta();
-camiseta.color = "Rojo";
-camiseta.modelo = "Manga larga";
-camiseta.marca = "Nike";
-camiseta.talla = "L";
-camiseta.precio = 15;
-var playera = new Camiseta();
-playera.color = "Verde";
-console.log(camiseta, playera);
+exports.Camiseta = Camiseta;

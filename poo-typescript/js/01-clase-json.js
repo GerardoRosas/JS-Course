@@ -1,4 +1,4 @@
-var bicicleta = {
+    var bicicleta = {
     color: 'rojo',
     modelo: 'bmx',
     frenos: 'disco',
